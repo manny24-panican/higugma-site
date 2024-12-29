@@ -1,0 +1,95 @@
+/*NAV Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.432); /* Darker background for a dramatic effect */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        padding: 10px 0; /* Add padding for a better look */
+        transition: opacity 0.3s ease-in-out; /* Smooth transition when showing/hiding */
+        border-radius: 15%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0; /* Increased margin for better spacing */
+        text-align: center;
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        display: block;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    }
+
+    .nav-links a:hover {
+        background-color:  #f4a261; /* Lighter orange on hover */
+        color: black; /* Contrast color on hover */
+        transform: scale(1.1); /* Slightly enlarge the link on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+        border-radius: 8px; /* Rounded corners on hover */
+    }
+
+    .burger-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        background-color:#f4a261;
+        border-radius: 8px; /* Rounded corners for the menu button */
+        transition: background-color 0.3s ease;
+    }
+
+    .burger-menu:hover {
+        background-color: #444; /* Slightly lighter color on hover */
+    }
+
+    .burger-menu div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: transform 0.3s ease; /* Smooth transition for burger lines */
+    }
+}
+@media (max-width: 768px) 
+
+{
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Three items per row */
+        gap: 10px;
+    }
+
+    .product-card {
+        display: block;
+        width: 90%; /* Adjust width for mobile */
+        margin: 10px auto; /* Center and add margin */
+    }
+
+    .product-info h3 {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .product-info p {
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+
+
+
+
+

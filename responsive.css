@@ -1,0 +1,159 @@
+
+
+    
+    /* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto; /* Allow height to adjust with content */
+      /* Add padding for smaller screens */
+    }
+
+    .hero-info {
+        margin-left: 30px;
+        text-align: justify; /* Center text for small screens */
+        justify-content: center;
+        gap: 0px;
+    }
+
+    
+    #hone{
+        font-size: 15px;
+        text-align: justify;
+        justify-content: space-evenly;
+        
+    }
+    #span2{
+        font-size: 11px;
+    }
+    #photo1{
+        width: 250px;
+        height: 300px;
+       
+    }
+    #span5{
+        font-size: 13px;
+        color: black;
+    }
+    
+
+
+
+
+
+}
+    .sponsor-logos img {
+        margin: 10px;
+        height: 40px;
+    }
+
+    .about-us p {
+        flex-direction: row;
+        display: block;
+        text-align: start;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-images img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .reasons {
+        flex-direction: column;
+    }
+
+    .reason {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-cards {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .join-with-us input {
+        width: 100%;
+    }
+
+
+/*NAV Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.432); /* Darker background for a dramatic effect */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        padding: 10px 0; /* Add padding for a better look */
+        transition: opacity 0.3s ease-in-out; /* Smooth transition when showing/hiding */
+        border-radius: 15%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0; /* Increased margin for better spacing */
+        text-align: center;
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        display: block;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    }
+
+    .nav-links a:hover {
+        background-color:  #f4a261; /* Lighter orange on hover */
+        color: black; /* Contrast color on hover */
+        transform: scale(1.1); /* Slightly enlarge the link on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+        border-radius: 8px; /* Rounded corners on hover */
+    }
+
+    .burger-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        background-color:#f4a261;
+        border-radius: 8px; /* Rounded corners for the menu button */
+        transition: background-color 0.3s ease;
+    }
+
+    .burger-menu:hover {
+        background-color: #444; /* Slightly lighter color on hover */
+    }
+
+    .burger-menu div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: transform 0.3s ease; /* Smooth transition for burger lines */
+    }
+}
